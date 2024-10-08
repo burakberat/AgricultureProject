@@ -1,0 +1,29 @@
+﻿@model AgricultureEntityLayer.Concrete.Admin
+
+@{
+    ViewData["Title"] = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Admin Girişi</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="Title">Kullanıcı Adı</label>
+                    <input type="text" class="form-control" asp-for="Username">
+                </div>
+                <div class="form-group">
+                    <label for="Title">Şifre</label>
+                    <input type="text" class="form-control" asp-for="Password">
+                </div>                
+                <button type="submit" class="btn btn-outline-info">Kaydet</button>
+                <button class="btn btn-light">Vazgeç</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
